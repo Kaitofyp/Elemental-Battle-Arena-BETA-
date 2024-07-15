@@ -1,0 +1,37 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("Kaito Hub", "Default")
+
+local tab = DrRayLibrary.newTab("Inf All", "ImageIdHere")
+
+tab.newButton("Inf Coins", "Click me!", function()
+    
+Inf coins
+ 
+local args = {
+    [1] = "Coins",
+    [2] = -9999e99,
+    [3] = "Offer_4",
+    [4] = "Gakusei",
+    [5] = "Daily",
+    [6] = "Common",
+    [7] = "Outfit"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ClickedShop"):FireServer(unpack(args))
+end)
+
+tab.newButton("Inf Gems", "Click me!", function()
+    
+local args = {
+    [1] = "Gems",
+    [2] = -9999e99,
+    [3] = "Offer_4",
+    [4] = "Gakusei",
+    [5] = "Daily",
+    [6] = "Common",
+    [7] = "Outfit"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ClickedShop"):FireServer(unpack(args))
+end)

@@ -6,8 +6,6 @@ local tab = DrRayLibrary.newTab("Inf All", "ImageIdHere")
 
 tab.newButton("Inf Coins", "Click me!", function()
     
-Inf coins
- 
 local args = {
     [1] = "Coins",
     [2] = -9999e99,
